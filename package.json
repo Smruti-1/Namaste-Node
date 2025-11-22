@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.5",
+    "validator": "^13.15.23"
+  },
+  "name": "devtinder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "node",
+    "javascript"
+  ],
+  "author": "smruti sakre",
+  "license": "ISC",
+  "description": ""
+}
