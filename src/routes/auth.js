@@ -63,3 +63,4 @@ authRouter.get("/logout",async(req,res)=>{
     res.send("User logged out succcessfully")
 })
 module.exports = authRouter;
+// $2b$10$J8fpo2IueI5nYnuMwFy6xOG0AGc3JlwsbEf8N7ik5GNcARrQnTh9u
