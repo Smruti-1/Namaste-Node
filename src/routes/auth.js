@@ -30,6 +30,7 @@ const passworHash = await bcrypt.hash(password,10)
 })
 
 authRouter.post("/login",async(req,res)=>{
+   console.log(req.body,"reqq")
    try{
 const {emailId,password} = req.body;
 
@@ -45,7 +46,8 @@ if(isPasswordValid){
    res.cookie("token", token, {
       expires: new Date(Date.now() + 8 * 3600000),
    });
-   res.send("Login successful");
+   res.send(user);
+   
 }else{
    // password is incorrect → throw error
    throw new Error("Password not correct");
